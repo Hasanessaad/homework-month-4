@@ -1,11 +1,14 @@
 package com.month4.Homework.Entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
 public class UserEntity implements UserDetails {
+
 
     private static final long serielVersionUID = 1L;
     private String username;
@@ -38,6 +41,7 @@ public class UserEntity implements UserDetails {
     @Override
     public boolean isCredentialsNonExpired() {
         // Implement the logic for checking if the credentials are non-expired
+
         return true; // You may want to customize this based on your requirements
     }
     @Override
